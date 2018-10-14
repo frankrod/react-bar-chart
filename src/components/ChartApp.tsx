@@ -11,20 +11,26 @@ export interface Props {
   onChangeRangeSliderValue: (rangeSliderValue: number | Range) => void;
 }
 
+const range = (start: number, end: number) => new Array(end - start + 1).fill(undefined).map((_, index) => index + start)
+
 const ChartApp = ({ rangeSliderValue, onChangeRangeSliderValue }: Props) => {
+  const dataArray = [84, 14, 234, 37, 64, 42, 197,11];
+  const min = 1;
+  const max = dataArray.length;
+  const includedBarColor = 'RGB(49, 172, 170, 0.8)'
+  const excludedBarColor = 'RGB(153, 153, 153, 0.8)'
+
+  const barsFiltered = range(rangeSliderValue.min, rangeSliderValue.max)
 
   const data = {
-    labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+    labels: dataArray.map((_, index) => `${index+1}`),
     datasets: [
       {
         label: 'Bar chart',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
+        backgroundColor: dataArray.map((_, index) => barsFiltered.includes(index+1) ? includedBarColor : excludedBarColor),
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-        hoverBorderColor: 'rgba(255,99,132,1)',
-        data: [84, 14, 234, 37, 64, 42, 197,11].sort((a, b) => b-a)
-      }
+        data: dataArray.sort((a, b) => b-a)
+      },
     ]
   }
 
@@ -37,8 +43,8 @@ const ChartApp = ({ rangeSliderValue, onChangeRangeSliderValue }: Props) => {
       />
       <div style={{ width: 300, marginLeft: 100, marginTop: 100 }}>
         <InputRange
-          maxValue={8}
-          minValue={1}
+          maxValue={max}
+          minValue={min}
           value={rangeSliderValue}
           onChange={value => onChangeRangeSliderValue(value)} 
         />
