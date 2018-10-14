@@ -1,4 +1,4 @@
-export interface StoreState {
-  languageName: string;
-  enthusiasmLevel: number;
+import { Range } from 'react-input-range';
+export interface ChartAppState {
+  rangeSliderValue: Range;
 }
