@@ -4,6 +4,7 @@ import { Action, onChangeRangeSliderValue } from '../actions'
 describe('chart-app reducer', () => {
   it('should return initial state', () => {
     const initialState = {
+      data: [84, 14, 234, 37, 64, 42, 197,11],
       rangeSliderValue: {
         min: 1,
         max: 8

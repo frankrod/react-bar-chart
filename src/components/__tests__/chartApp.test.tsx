@@ -6,6 +6,7 @@ import '../ChartApp.css';
 
 describe('<ChartApp />', () => {
   const props = {
+    data: [1, 3, 3],
     rangeSliderValue: { min:1, max: 8 },
     onChangeRangeSliderValue: jest.fn()
   };

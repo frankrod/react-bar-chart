@@ -2,6 +2,7 @@ import { mapStateToProps, mapDispatchToProps } from '../index';
 
 const state = {
   chartApp: {
+    data: [84, 14, 234, 37, 64, 42, 197,11],
     rangeSliderValue: {
       min: 1,
       max: 8
@@ -10,6 +11,7 @@ const state = {
 };
 
 const props = {
+  data: state.chartApp.data,
   rangeSliderValue: state.chartApp.rangeSliderValue
 }
 

@@ -4,6 +4,13 @@ exports[`<ChartApp /> should render successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ChartApp
+    data={
+        Array [
+            3,
+            3,
+            1,
+          ]
+    }
     onChangeRangeSliderValue={[Function]}
     rangeSliderValue={
         Object {
@@ -38,22 +45,12 @@ ShallowWrapper {
                                               "RGB(49, 172, 170, 0.8)",
                                               "RGB(49, 172, 170, 0.8)",
                                               "RGB(49, 172, 170, 0.8)",
-                                              "RGB(49, 172, 170, 0.8)",
-                                              "RGB(49, 172, 170, 0.8)",
-                                              "RGB(49, 172, 170, 0.8)",
-                                              "RGB(49, 172, 170, 0.8)",
-                                              "RGB(49, 172, 170, 0.8)",
                                             ],
                                             "borderWidth": 1,
                                             "data": Array [
-                                              234,
-                                              197,
-                                              84,
-                                              64,
-                                              42,
-                                              37,
-                                              14,
-                                              11,
+                                              3,
+                                              3,
+                                              1,
                                             ],
                                             "label": "Bar chart",
                                           },
@@ -62,11 +59,6 @@ ShallowWrapper {
                                           "1",
                                           "2",
                                           "3",
-                                          "4",
-                                          "5",
-                                          "6",
-                                          "7",
-                                          "8",
                                         ],
                                       }
                     }
@@ -82,7 +74,7 @@ ShallowWrapper {
           className="item"
 >
           <Unknown
-                    maxValue={8}
+                    maxValue={3}
                     minValue={1}
                     onChange={[Function]}
                     value={
@@ -112,22 +104,12 @@ ShallowWrapper {
                                           "RGB(49, 172, 170, 0.8)",
                                           "RGB(49, 172, 170, 0.8)",
                                           "RGB(49, 172, 170, 0.8)",
-                                          "RGB(49, 172, 170, 0.8)",
-                                          "RGB(49, 172, 170, 0.8)",
-                                          "RGB(49, 172, 170, 0.8)",
-                                          "RGB(49, 172, 170, 0.8)",
-                                          "RGB(49, 172, 170, 0.8)",
                                         ],
                                         "borderWidth": 1,
                                         "data": Array [
-                                          234,
-                                          197,
-                                          84,
-                                          64,
-                                          42,
-                                          37,
-                                          14,
-                                          11,
+                                          3,
+                                          3,
+                                          1,
                                         ],
                                         "label": "Bar chart",
                                       },
@@ -136,11 +118,6 @@ ShallowWrapper {
                                       "1",
                                       "2",
                                       "3",
-                                      "4",
-                                      "5",
-                                      "6",
-                                      "7",
-                                      "8",
                                     ],
                                   }
             }
@@ -166,22 +143,12 @@ ShallowWrapper {
                     "RGB(49, 172, 170, 0.8)",
                     "RGB(49, 172, 170, 0.8)",
                     "RGB(49, 172, 170, 0.8)",
-                    "RGB(49, 172, 170, 0.8)",
-                    "RGB(49, 172, 170, 0.8)",
-                    "RGB(49, 172, 170, 0.8)",
-                    "RGB(49, 172, 170, 0.8)",
-                    "RGB(49, 172, 170, 0.8)",
                   ],
                   "borderWidth": 1,
                   "data": Array [
-                    234,
-                    197,
-                    84,
-                    64,
-                    42,
-                    37,
-                    14,
-                    11,
+                    3,
+                    3,
+                    1,
                   ],
                   "label": "Bar chart",
                 },
@@ -190,11 +157,6 @@ ShallowWrapper {
                 "1",
                 "2",
                 "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
               ],
             },
             "height": 400,
@@ -214,7 +176,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Unknown
-            maxValue={8}
+            maxValue={3}
             minValue={1}
             onChange={[Function]}
             value={
@@ -232,7 +194,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "maxValue": 8,
+            "maxValue": 3,
             "minValue": 1,
             "onChange": [Function],
             "value": Object {
@@ -268,22 +230,12 @@ ShallowWrapper {
                                                       "RGB(49, 172, 170, 0.8)",
                                                       "RGB(49, 172, 170, 0.8)",
                                                       "RGB(49, 172, 170, 0.8)",
-                                                      "RGB(49, 172, 170, 0.8)",
-                                                      "RGB(49, 172, 170, 0.8)",
-                                                      "RGB(49, 172, 170, 0.8)",
-                                                      "RGB(49, 172, 170, 0.8)",
-                                                      "RGB(49, 172, 170, 0.8)",
                                                     ],
                                                     "borderWidth": 1,
                                                     "data": Array [
-                                                      234,
-                                                      197,
-                                                      84,
-                                                      64,
-                                                      42,
-                                                      37,
-                                                      14,
-                                                      11,
+                                                      3,
+                                                      3,
+                                                      1,
                                                     ],
                                                     "label": "Bar chart",
                                                   },
@@ -292,11 +244,6 @@ ShallowWrapper {
                                                   "1",
                                                   "2",
                                                   "3",
-                                                  "4",
-                                                  "5",
-                                                  "6",
-                                                  "7",
-                                                  "8",
                                                 ],
                                               }
                         }
@@ -312,7 +259,7 @@ ShallowWrapper {
             className="item"
 >
             <Unknown
-                        maxValue={8}
+                        maxValue={3}
                         minValue={1}
                         onChange={[Function]}
                         value={
@@ -342,22 +289,12 @@ ShallowWrapper {
                                                 "RGB(49, 172, 170, 0.8)",
                                                 "RGB(49, 172, 170, 0.8)",
                                                 "RGB(49, 172, 170, 0.8)",
-                                                "RGB(49, 172, 170, 0.8)",
-                                                "RGB(49, 172, 170, 0.8)",
-                                                "RGB(49, 172, 170, 0.8)",
-                                                "RGB(49, 172, 170, 0.8)",
-                                                "RGB(49, 172, 170, 0.8)",
                                               ],
                                               "borderWidth": 1,
                                               "data": Array [
-                                                234,
-                                                197,
-                                                84,
-                                                64,
-                                                42,
-                                                37,
-                                                14,
-                                                11,
+                                                3,
+                                                3,
+                                                1,
                                               ],
                                               "label": "Bar chart",
                                             },
@@ -366,11 +303,6 @@ ShallowWrapper {
                                             "1",
                                             "2",
                                             "3",
-                                            "4",
-                                            "5",
-                                            "6",
-                                            "7",
-                                            "8",
                                           ],
                                         }
               }
@@ -396,22 +328,12 @@ ShallowWrapper {
                       "RGB(49, 172, 170, 0.8)",
                       "RGB(49, 172, 170, 0.8)",
                       "RGB(49, 172, 170, 0.8)",
-                      "RGB(49, 172, 170, 0.8)",
-                      "RGB(49, 172, 170, 0.8)",
-                      "RGB(49, 172, 170, 0.8)",
-                      "RGB(49, 172, 170, 0.8)",
-                      "RGB(49, 172, 170, 0.8)",
                     ],
                     "borderWidth": 1,
                     "data": Array [
-                      234,
-                      197,
-                      84,
-                      64,
-                      42,
-                      37,
-                      14,
-                      11,
+                      3,
+                      3,
+                      1,
                     ],
                     "label": "Bar chart",
                   },
@@ -420,11 +342,6 @@ ShallowWrapper {
                   "1",
                   "2",
                   "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
                 ],
               },
               "height": 400,
@@ -444,7 +361,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Unknown
-              maxValue={8}
+              maxValue={3}
               minValue={1}
               onChange={[Function]}
               value={
@@ -462,7 +379,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "maxValue": 8,
+              "maxValue": 3,
               "minValue": 1,
               "onChange": [Function],
               "value": Object {
