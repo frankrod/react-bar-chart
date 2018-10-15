@@ -4,16 +4,17 @@ import { Bar } from 'react-chartjs-2';
 import InputRange, { Range } from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
 
-import './Hello.css';
+import './Hello.css'; 
 
 export interface Props {
   rangeSliderValue: Range; 
   onChangeRangeSliderValue: (rangeSliderValue: number | Range) => void;
 }
 
-const range = (start: number, end: number) => new Array(end - start + 1).fill(undefined).map((_, index) => index + start)
+const range = (start: number, end: number) => Array(end - start + 1).fill(undefined).map((_, index) => index + start)
 
 const ChartApp = ({ rangeSliderValue, onChangeRangeSliderValue }: Props) => {
+  
   const dataArray = [84, 14, 234, 37, 64, 42, 197,11];
   const min = 1;
   const max = dataArray.length;
@@ -35,13 +36,16 @@ const ChartApp = ({ rangeSliderValue, onChangeRangeSliderValue }: Props) => {
   }
 
   return (
-    <div>
+    <div style={{width: 500 }}>
       <Bar
         data={data}
-        width={100}
-        height={50}
+        
+        height={400}
+        options={{
+          maintainAspectRatio: false
+        }}
       />
-      <div style={{ width: 300, marginLeft: 100, marginTop: 100 }}>
+      <div className="sliderBox" >
         <InputRange
           maxValue={max}
           minValue={min}

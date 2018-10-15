@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import { State, reducer } from '../reducers';
+import { State, reducer } from '../root-reducer';
 
 const store = createStore<State, any, any, any>(
   reducer, /* preloadedState, */

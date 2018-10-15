@@ -1,4 +1,4 @@
-import * as chartApp from './chartApp'
+import * as chartApp from '../containers/chart-app/reducer'
 import { combineReducers } from 'redux';
 
 export interface State {

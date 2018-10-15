@@ -1,13 +1,9 @@
-import ChartApp from '../components/ChartApp';
-import * as actions from '../actions/chartApp';
-import { State } from '../reducers';
+import ChartApp from '../../components/ChartApp';
+import * as actions from './actions';
+import { State } from '../../root-reducer';
 import { Range } from 'react-input-range';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-
-// export const mapStateToProps = ({ rangeSliderValue }: ChartAppState) => ({
-//   rangeSliderValue
-// });
 
 export const mapStateToProps = ({ chartApp }: State) => {
   return  {
