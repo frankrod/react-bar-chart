@@ -39,7 +39,6 @@ const ChartApp = ({ rangeSliderValue, onChangeRangeSliderValue }: Props) => {
       <div className="item" >
         <Bar
           data={data}
-          
           height={400}
           options={{
             maintainAspectRatio: false

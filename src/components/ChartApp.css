@@ -1,8 +1,3 @@
-/* .sliderBox {
-  width: 300px;
- 
-} */
-
 .container { 
   display: flex;
   flex-direction: column;
@@ -12,4 +7,19 @@
 .item {
   width: 500px;
   margin-top: 100px;
+}
+
+.input-range__slider {
+  background: RGB(49, 172, 170);
+  border-color: RGB(49, 172, 170);
+}
+
+.input-range__track--active {
+  background: RGB(0,0,0, 0.6);
+  border-color: RGB(0,0,0, 0.6);
+}
+
+.input-range__label-container {
+  color: RGB(0,0,0, 0.6);
+  font-weight: bold;
 }
